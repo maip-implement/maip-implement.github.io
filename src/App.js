@@ -1,19 +1,34 @@
 import React from "react";
-import "./App.css";
+
+// component
 import Table from "./components/Table";
+
+// data
+import {
+  stackLearner,
+  webProgramming,
+  freelanceCourse,
+  simplilearnCourse,
+  bohubrihiCourses,
+  english,
+  cseBookList,
+  importantDocs,
+  extra,
+} from "./data";
 
 const App = () => {
   return (
     <>
-      <Table tableTitle="Stack Learner Bootcamp" />
-      <Table tableTitle="Web Programming" />
-      <Table tableTitle="Freelance Course" />
-      <Table tableTitle="Simplilearn Course Curriculum" />
-      <Table tableTitle="Bohubrihi" />
-      <Table tableTitle="English" />
-      <Table tableTitle="CSE Book List" />
-      <Table tableTitle="Important Docs" />
-      <Table tableTitle="Extra" />
+      <h1 style={{ textAlign: "center" }}>MAIPE Drive</h1>
+      <Table tableTitle="Stack Learner Bootcamp" data={stackLearner} />
+      <Table tableTitle="Web Programming" data={webProgramming} />
+      <Table tableTitle="Freelance Course" data={freelanceCourse} />
+      <Table tableTitle="Simplilearn Course Curriculum" data={simplilearnCourse} />
+      <Table tableTitle="Bohubrihi Courses" data={bohubrihiCourses} />
+      <Table tableTitle="English" data={english} />
+      <Table tableTitle="CSE Book List" data={cseBookList} />
+      <Table tableTitle="Important Docs" data={importantDocs} />
+      <Table tableTitle="Extra" data={extra} />
     </>
   );
 };
