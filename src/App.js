@@ -19,11 +19,20 @@ import {
 const App = () => {
   return (
     <>
-      <h1 style={{ textAlign: "center" }}>MAIPE Drive</h1>
+      <section className="siteTitle">
+        <img
+          src="/logo.jpg"
+          alt="logo"
+        />
+        <h3>MAIPE Drive</h3>
+      </section>
       <Table tableTitle="Stack Learner Bootcamp" data={stackLearner} />
       <Table tableTitle="Web Programming" data={webProgramming} />
       <Table tableTitle="Freelance Course" data={freelanceCourse} />
-      <Table tableTitle="Simplilearn Course Curriculum" data={simplilearnCourse} />
+      <Table
+        tableTitle="Simplilearn Course Curriculum"
+        data={simplilearnCourse}
+      />
       <Table tableTitle="Bohubrihi Courses" data={bohubrihiCourses} />
       <Table tableTitle="English" data={english} />
       <Table tableTitle="CSE Book List" data={cseBookList} />
