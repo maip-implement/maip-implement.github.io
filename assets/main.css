@@ -1,7 +1,7 @@
 /*
  * Container style
  */
- .ps {
+.ps {
   overflow: hidden !important;
   overflow-anchor: none;
   -ms-overflow-style: none;
@@ -15,8 +15,8 @@
 .ps__rail-x {
   display: none;
   opacity: 0;
-  transition: background-color .2s linear, opacity .2s linear;
-  -webkit-transition: background-color .2s linear, opacity .2s linear;
+  transition: background-color 0.2s linear, opacity 0.2s linear;
+  -webkit-transition: background-color 0.2s linear, opacity 0.2s linear;
   height: 15px;
   /* there must be 'bottom' or 'top' for ps__rail-x */
   bottom: 0px;
@@ -27,8 +27,8 @@
 .ps__rail-y {
   display: none;
   opacity: 0;
-  transition: background-color .2s linear, opacity .2s linear;
-  -webkit-transition: background-color .2s linear, opacity .2s linear;
+  transition: background-color 0.2s linear, opacity 0.2s linear;
+  -webkit-transition: background-color 0.2s linear, opacity 0.2s linear;
   width: 15px;
   /* there must be 'right' or 'left' for ps__rail-y */
   right: 0;
@@ -65,8 +65,8 @@
 .ps__thumb-x {
   background-color: #aaa;
   border-radius: 6px;
-  transition: background-color .2s linear, height .2s ease-in-out;
-  -webkit-transition: background-color .2s linear, height .2s ease-in-out;
+  transition: background-color 0.2s linear, height 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s linear, height 0.2s ease-in-out;
   height: 6px;
   /* there must be 'bottom' for ps__thumb-x */
   bottom: 2px;
@@ -77,8 +77,8 @@
 .ps__thumb-y {
   background-color: #aaa;
   border-radius: 6px;
-  transition: background-color .2s linear, width .2s ease-in-out;
-  -webkit-transition: background-color .2s linear, width .2s ease-in-out;
+  transition: background-color 0.2s linear, width 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s linear, width 0.2s ease-in-out;
   width: 6px;
   /* there must be 'right' for ps__thumb-y */
   right: 2px;
@@ -115,38 +115,39 @@
 [ FONT ]*/
 @font-face {
   font-family: Lato-Regular;
-  src: url('Lato-Regular.ttf'); 
+  src: url("Lato-Regular.ttf");
 }
 @font-face {
   font-family: Lato-Bold;
-  src: url('Lato-Bold.ttf'); 
+  src: url("Lato-Bold.ttf");
 }
 
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
 * {
-	margin: 0px; 
-	padding: 0px; 
-	box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-body, html {
-	height: 100%;
-	font-family: sans-serif;
+body,
+html {
+  height: 100%;
+  font-family: sans-serif;
 }
 
 /* ------------------------------------ */
 a {
-	margin: 0px;
-	transition: all 0.4s;
-	-webkit-transition: all 0.4s;
+  margin: 0px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
 }
 a:focus {
-	outline: none !important;
+  outline: none !important;
 }
 a:hover {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 /*//////////////////////////////////////////////////////////////////
@@ -203,7 +204,8 @@ a:hover {
 table {
   width: 100%;
 }
-th, td {
+th,
+td {
   font-weight: unset;
   padding-right: 10px;
   padding-left: 10px;
@@ -217,6 +219,18 @@ td {
   font-size: 15px !important;
 }
 .column1 {
+  width: 5%;
+}
+.column2 {
+  width: 25%;
+}
+.column3 {
+  width: 60%;
+}
+.column4 {
+  width: 10%;
+}
+/* .column1 {
   width: 60%;
   padding-left: 40px;
 }
@@ -226,7 +240,7 @@ td {
 .column5 {
   width: 15%;
   text-align: center;
-}
+} */
 .table100-head th {
   padding-top: 18px;
   padding-bottom: 18px;
