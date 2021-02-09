@@ -121,6 +121,10 @@
   font-family: Lato-Bold;
   src: url("Lato-Bold.ttf");
 }
+@font-face {
+  font-family: StalinistOne-Regular;
+  src: url("StalinistOne-Regular.ttf");
+}
 
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
@@ -305,4 +309,19 @@ td {
 }
 .table100.ver1 .ps__rail-y .ps__thumb-y::before {
   background-color: #cccccc;
+}
+
+.siteTitle {
+  font-family: StalinistOne-Regular;
+  text-align: center;
+  margin-top: 3rem;
+  /* color: #808080; */
+  /* color: DodgerBlue; */
+  color: MediumSeaGreen;
+}
+
+.siteTitle img {
+  border-radius: 1rem;
+  width: 100px;
+  margin-bottom: 1rem;
 }
