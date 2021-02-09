@@ -274,7 +274,8 @@ td {
   font-size: 18px;
   color: #fff;
   line-height: 1.4;
-  background-color: #6c7ae0;
+  /* background-color: #6c7ae0; */
+  background-color: MediumSeaGreen;
 }
 .table100.ver1 td {
   font-family: Lato-Regular;
