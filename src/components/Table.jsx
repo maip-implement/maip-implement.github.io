@@ -5,7 +5,7 @@ const Table = (props) => {
 
   return (
     <section className="limiter" style={{ marginTop: "100px" }}>
-      <h3>{tableTitle}</h3>
+      <h3 className="text-center">{tableTitle}</h3>
       <div className="table100 ver1 m-b-110" style={{ height: "inherit" }}>
         <div className="table100-head">
           <table>
